@@ -265,7 +265,7 @@ class MainActivity : Activity() {
     private fun launch(a: App) {
         running += a.pkg
         hide()
-        try { startActivity(a.intent) } catch (_: Exception) {}
+        try { startActivity(a.intent) } catch (e: Exception) {}
         refreshDock()
     }
 
